@@ -31,17 +31,6 @@
     
 #### 4. 確認 `prometheus-data-values.yaml` 中 image repository 位置，及客製化修改。
 
-如放入企業憑證：
-    
-    ```sh
-    ingress:
-      enabled: true
-      virtual_host_fqdn: "prometheus.system.tanzu"
-      tlsCertificate:
-        tls.crt: |
-            -----BEGIN ...
-    ```
-
 #### 5. 用 `prometheus-data-values.yaml` 新增 secret 
 
     ```sh
