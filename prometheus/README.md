@@ -9,7 +9,7 @@
 
 ## Installation
 
-#### 1. 部署 cert-manager if its not already installed
+#### 1. 部署 cert-manager if its not already installed (or 自帶憑證跳過此步驟)
 
     ```sh
     kubectl apply -f ../cert-manager/01-cert-manager.-namespaceyaml
@@ -28,8 +28,19 @@
     ```sh
     cp prometheus-data-values.yaml.example prometheus-data-values.yaml
     ```
-#### 4. 確認 `prometheus-data-values.yaml` 中 image repository 位置
+    
+#### 4. 確認 `prometheus-data-values.yaml` 中 image repository 位置，及客製化修改。
 
+如放入企業憑證：
+    
+    ```sh
+    ingress:
+      enabled: true
+      virtual_host_fqdn: "prometheus.system.tanzu"
+      tlsCertificate:
+        tls.crt: |
+            -----BEGIN ...
+    ```
 
 #### 5. 用 `prometheus-data-values.yaml` 新增 secret 
 
