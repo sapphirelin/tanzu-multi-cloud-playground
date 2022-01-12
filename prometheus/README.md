@@ -12,7 +12,7 @@
 #### 1. 部署 cert-manager if its not already installed (or 自帶憑證跳過此步驟)
 
 ```sh
-kubectl apply -f ../cert-manager/01-cert-manager.-namespaceyaml
+kubectl apply -f ../cert-manager/01-cert-manager.-namespace.yaml
 kubectl apply -f ../cert-manager/02-cert-manager-crds.yaml
 kubectl apply -f ../cert-manager/03-cert-manager.yaml
 ```
