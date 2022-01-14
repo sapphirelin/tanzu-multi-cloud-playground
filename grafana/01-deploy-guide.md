@@ -14,6 +14,7 @@ kubectl apply -f ../cert-manager/03-cert-manager.yaml
 ```sh
 kubectl apply -f grafana/namespace-role.yaml
 ```
+![Sapphire's Imgur](https://i.imgur.com/XEivGeY.png)
 
 #### 3. 複製 `grafana-data-values.yaml.example` 並命名 `grafana-data-values.yaml`
     
@@ -28,6 +29,7 @@ cp grafana/grafana-data-values.yaml.example grafana/grafana-data-values.yaml
 ```sh
 kubectl create secret generic grafana-data-values --from-file=values.yaml=grafana-data-values.yaml -n tanzu-system-monitoring
 ```
+![Sapphire's Imgur](https://i.imgur.com/0euDXAD.png)
 
 #### 6. Deploy grafana extension
 
