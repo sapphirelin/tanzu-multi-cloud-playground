@@ -12,13 +12,13 @@ kubectl apply -f ../cert-manager/03-cert-manager.yaml
 #### 2. 建立一個 grafana 用 namespace role/rolebinding
 
 ```sh
-kubectl apply -f namespace-role.yaml
+kubectl apply -f grafana/namespace-role.yaml
 ```
 
 #### 3. 複製 `grafana-data-values.yaml.example` 並命名 `grafana-data-values.yaml`
     
 ```sh
-cp grafana-data-values.yaml.example grafana-data-values.yaml
+cp grafana/grafana-data-values.yaml.example grafana/grafana-data-values.yaml
 ```
     
 #### 4. 確認 `grafana-data-values.yaml` 中 image repository 位置、輸入密碼及客製化修改。
@@ -32,7 +32,7 @@ kubectl create secret generic grafana-data-values --from-file=values.yaml=grafan
 #### 6. Deploy grafana extension
 
 ```sh
-kubectl apply -f grafana-extension.yaml
+kubectl apply -f grafana/grafana-extension.yaml
 ```
 
 #### 7. 檢查狀態
