@@ -7,7 +7,10 @@
 * 一座 Workload cluster (TKC)
 * 安裝 ytt CLI (<https://github.com/k14s/ytt/releases>)
 * 安裝 kapp CLI (<https://github.com/k14s/kapp/releases>)
-* TKGm workload cluster 已經預安裝 kapp-controller，不用重複安裝。
+* TKGm workload cluster 已經預安裝 kapp-controller，不用重複安裝。若為其他 cluster 請安裝：
+```
+kubectl apply -f kapp-controller.yaml
+```
 
 clone files:
 * namespace-role.yaml
