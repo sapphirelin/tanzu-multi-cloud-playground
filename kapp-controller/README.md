@@ -44,7 +44,12 @@ rm -rf cert-manager/*-cert-manager.yaml-e
 
 ### Install
 
-調整設定檔案
+調整設定檔案，填入憑證
+```sh
+vim kapp-controller-config.yaml
+```
+    
+後執行
 ```sh
 kubectl apply -f kapp-controller-config.yaml
 ```
