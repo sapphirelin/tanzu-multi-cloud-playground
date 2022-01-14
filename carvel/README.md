@@ -20,11 +20,15 @@ cd carvel/
 wget -O- https://raw.githubusercontent.com/sapphirelin/tanzu-multi-cloud-playground/main/carvel/install.sh > install.sh
 sudo bash install.sh
 ```
+![Sapphire's Imgur](https://i.imgur.com/TZflcfw.png)
+![Sapphire's Imgur](https://i.imgur.com/Quje0e5.png)
+
 check
 ```sh
 kapp version
 ytt version
 ```
+![Sapphire's Imgur](https://i.imgur.com/6WRE8wm.png)
 
 * ytt_version=v0.38.0
 * kbld_version=v0.32.0
