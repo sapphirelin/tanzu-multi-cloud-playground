@@ -1,6 +1,5 @@
-# Upgrade 
+# Upgrade 升級
 
-[Documents](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.4/vmware-tanzu-kubernetes-grid-14/GUID-upgrade-tkg-index.html)
 
 ## download CLI & ova
 
