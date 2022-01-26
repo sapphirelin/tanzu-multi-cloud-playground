@@ -1,6 +1,6 @@
 # Prometheus Extension 
 
-以 TKG Extension 1.3.1 安裝於 TKG 1.4.1 環境為例
+以 TKG Extension 1.3.1 安裝於 TKG workload cluster 1.4.1 環境為例
 
 ## Prerequisites
 
