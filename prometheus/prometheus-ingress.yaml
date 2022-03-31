@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: http-ingress
+  namespace: tanzu-system-monitoring
+  labels:
+    app: prometheus
+spec:
+  rules:
+  - host: k8s-monitor.vmk.local
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: prometheus-server
+            port:
+              number: 80
