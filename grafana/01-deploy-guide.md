@@ -40,7 +40,8 @@ kubectl apply -f grafana/grafana-extension.yaml
 #### 7. 檢查狀態
 
 ```sh
-kubectl get app grafana -n tanzu-system-monitoring
+kubectl -n tanzu-system-monitoring get extension grafana
+kubectl -n tanzu-system-monitoring get app grafana --watch
 ```
 
    要出現 `Reconcile Succeeded`
